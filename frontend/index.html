@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HousePrice AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">🏠</div>
+
+            <div>
+                <h1>HousePrice AI</h1>
+                <p>Linear Regression House Price Prediction</p>
+            </div>
+        </div>
+
+
+        <div class="card">
+
+            <h2>Enter House Details</h2>
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label>Area (sq ft)</label>
+
+                    <input
+                        type="number"
+                        id="area"
+                        placeholder="Example: 1500"
+                        min="1"
+                    >
+                </div>
+
+
+                <div class="input-group">
+                    <label>Bedrooms</label>
+
+                    <input
+                        type="number"
+                        id="bedrooms"
+                        placeholder="Example: 3"
+                        min="1"
+                    >
+                </div>
+
+
+                <div class="input-group">
+                    <label>Bathrooms</label>
+
+                    <input
+                        type="number"
+                        id="bathrooms"
+                        placeholder="Example: 2"
+                        min="1"
+                    >
+                </div>
+
+
+                <div class="input-group">
+                    <label>House Age (years)</label>
+
+                    <input
+                        type="number"
+                        id="age"
+                        placeholder="Example: 5"
+                        min="0"
+                    >
+                </div>
+
+            </div>
+
+
+            <button onclick="predictPrice()">
+                Predict House Price
+            </button>
+
+
+            <div id="loading" class="loading">
+                Predicting...
+            </div>
+
+
+            <div id="result" class="result">
+
+                <p>Predicted House Price</p>
+
+                <h3 id="price">
+                    ₹ 0
+                </h3>
+
+            </div>
+
+        </div>
+
+
+        <div class="info">
+
+            <div>
+                <span>🤖</span>
+                <strong>ML Model</strong>
+                <p>Linear Regression</p>
+            </div>
+
+            <div>
+                <span>⚡</span>
+                <strong>Backend</strong>
+                <p>FastAPI</p>
+            </div>
+
+            <div>
+                <span>💻</span>
+                <strong>Frontend</strong>
+                <p>HTML CSS JavaScript</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
